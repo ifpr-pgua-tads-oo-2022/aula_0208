@@ -68,4 +68,10 @@ public class ControladorQuiz {
         erros = 0;
     }
 
+    public void cadastrarQuestao(String enunciado, String altCorreta, String[] altErradas){
+        Questao questao = new Questao(enunciado, altCorreta, altErradas);
+
+        questoes.add(questao);
+    }
+
 }
